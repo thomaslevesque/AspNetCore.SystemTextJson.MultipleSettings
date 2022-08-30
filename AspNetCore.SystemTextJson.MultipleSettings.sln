@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B9E8AE0-3DF5-4B6D-BD68-23F74553DEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.SystemTextJson.MultipleSettings", "src\AspNetCore.SystemTextJson.MultipleSettings\AspNetCore.SystemTextJson.MultipleSettings.csproj", "{2E2A0589-48C6-4A65-A6C5-350B0E70362A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{19070702-534F-4995-BD9A-22682667DC81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebApi", "sample\SampleWebApi\SampleWebApi.csproj", "{8CABD216-9DFD-4B10-97B2-123705E887C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E2A0589-48C6-4A65-A6C5-350B0E70362A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2A0589-48C6-4A65-A6C5-350B0E70362A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2A0589-48C6-4A65-A6C5-350B0E70362A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2A0589-48C6-4A65-A6C5-350B0E70362A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CABD216-9DFD-4B10-97B2-123705E887C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CABD216-9DFD-4B10-97B2-123705E887C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CABD216-9DFD-4B10-97B2-123705E887C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CABD216-9DFD-4B10-97B2-123705E887C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E2A0589-48C6-4A65-A6C5-350B0E70362A} = {2B9E8AE0-3DF5-4B6D-BD68-23F74553DEF3}
+		{8CABD216-9DFD-4B10-97B2-123705E887C0} = {19070702-534F-4995-BD9A-22682667DC81}
+	EndGlobalSection
+EndGlobal
