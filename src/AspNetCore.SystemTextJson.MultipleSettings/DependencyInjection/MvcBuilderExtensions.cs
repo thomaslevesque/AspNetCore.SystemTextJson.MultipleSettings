@@ -10,6 +10,8 @@ public static class MvcBuilderExtensions
 {
     public static IMvcBuilder AddJsonOptions(this IMvcBuilder builder, string settingsName, Action<JsonOptions> configure)
     {
+        ArgumentNullException.ThrowIfNull(builder);
+        ArgumentNullException.ThrowIfNull(configure);
         builder.Services.Configure(settingsName, configure);
         builder.Services.AddSingleton<IPostConfigureOptions<MvcOptions>>(sp =>
         {

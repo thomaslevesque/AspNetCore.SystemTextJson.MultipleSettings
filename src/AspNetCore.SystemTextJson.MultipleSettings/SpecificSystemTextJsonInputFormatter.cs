@@ -6,7 +6,7 @@ namespace AspNetCore.SystemTextJson.MultipleSettings;
 
 public class SpecificSystemTextJsonInputFormatter : SystemTextJsonInputFormatter
 {
-    public SpecificSystemTextJsonInputFormatter(string settingsName, JsonOptions options, ILogger<SystemTextJsonInputFormatter> logger)
+    public SpecificSystemTextJsonInputFormatter(string settingsName, JsonOptions options, ILogger<SpecificSystemTextJsonInputFormatter> logger)
         : base(options, logger)
     {
         SettingsName = settingsName;
