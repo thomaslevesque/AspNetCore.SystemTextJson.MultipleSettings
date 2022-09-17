@@ -13,12 +13,11 @@ public static class MvcBuilderExtensions
         ArgumentNullException.ThrowIfNull(builder);
         ArgumentNullException.ThrowIfNull(configure);
         builder.Services.Configure(settingsName, configure);
-        builder.Services.AddSingleton<IPostConfigureOptions<MvcOptions>>(sp =>
+        builder.Services.AddSingleton<IConfigureOptions<MvcOptions>>(sp =>
         {
-            var optionsSnapshot = sp.GetRequiredService<IOptionsMonitor<JsonOptions>>();
-            var options = optionsSnapshot.Get(settingsName);
+            var options = sp.GetRequiredService<IOptionsMonitor<JsonOptions>>();
             var loggerFactory = sp.GetRequiredService<ILoggerFactory>();
-            return new PostConfigureMvcJsonOptions(settingsName, options, loggerFactory);
+            return new ConfigureMvcJsonOptions(settingsName, options, loggerFactory);
         });
         return builder;
     }
